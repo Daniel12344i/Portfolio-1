@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:frontend": "vite",
+    "dev:server": "node --watch server.js",
+    "dev": "concurrently -n frontend,server -c green,blue \"npm run dev:frontend\" \"npm run dev:server\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "concurrently": "8.2.2",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.12.2",
+    "hono": "^4.5.11",
+    "serve-static": "^1.15.0",
+    "zod": "^3.23.8"
+  }
+}

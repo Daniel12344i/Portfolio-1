@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-1</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <div class="container">
+        <!-- Seksjon for prosjektliste -->
+        <section class="column" id="project-list-container">
+          <h2>Prosjektliste</h2>
+          <div id="project-list"></div>
+        </section>
+
+        <!-- Seksjon for å legge til et nytt prosjekt -->
+        <section class="column" id="new-project-form">
+          <h2>Nytt Prosjekt</h2>
+          <form id="project-form">
+            <label for="title">Tittel</label>
+            <input type="text" id="title" placeholder="Tittel" required />
+
+            <label for="description">Beskrivelse</label>
+            <textarea
+              id="description"
+              placeholder="Beskrivelse"
+              required
+            ></textarea>
+
+            <label for="technologies">Teknologier (komma-separert)</label>
+            <input
+              type="text"
+              id="technologies"
+              placeholder="Teknologier (komma-separert)"
+              required
+            />
+
+            <button type="submit">Lagre Prosjekt</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
