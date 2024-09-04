@@ -37,6 +37,8 @@ Here is a screenshot of the current state of the application:
 
 ![Screenshot of Portfolio Application](Screenshot-av-siden.png)
 
+### Network Panel
+
 Here is the screenshot of the network panel showing the relevant network requests:
 
 ![Network Panel Screenshot](Network-Panel-Screenshot.png)
