@@ -31,6 +31,23 @@ Below is the wireframe for the project page that displays all projects and allow
 
 ![Wireframe](Wireframe.png)
 
+## Sequence Diagrams
+
+To better understand the interactions between the client (browser) and the server, i have created sequence diagrams for the POST and GET operations.
+
+### 1. POST Operation - Adding a New Project
+
+The following sequence diagram illustrates what happens when you create a new project in your portfolio:
+
+![Sequence Diagram for POST Operation](docs/PostDiagram.png)
+
+### 2. GET Operation - Loading All Projects
+
+The following sequence diagram shows what happens when you load all projects when the application starts:
+
+![Sequence Diagram for GET Operation](docs/GetDiagram.png)
+
+
 ## Screenshot
 
 Here is a screenshot of the current state of the application:
