@@ -1,50 +1,122 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Portfolio- v2
+Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This version builds upon the initial portfolio project by:
 
-## Expanding the ESLint configuration
+    Converting the frontend to React for a better development experience and dynamic updates.
+    Setting up a Node.js backend using the Hono framework.
+    Integrating backend API endpoints to fetch, add, update, and delete project data stored in a JSON file.
+    Utilizing TypeScript for enhanced type safety on both frontend and backend.
+    CORS configuration to ensure communication between the frontend and backend.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Features
 
-- Configure the top-level `parserOptions` property like this:
+    Frontend built with React:
+        Dynamically displays a list of projects.
+        Forms to add and update projects.
+        Option to delete projects.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+    Backend with Hono and Node.js:
+        Provides API endpoints to handle:
+            GET: Fetch all projects.
+            POST: Add a new project.
+            POST (update): Update an existing project.
+            POST (delete): Remove a project.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+    Data Persistence:
+        The project data is saved and loaded from a JSON file on the backend (projects.json).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+The design of the application is based on the following layout:
+![Sequence Diagram for POST Operation](Screenshot-portfolio-2.png)
+
+Project Structure
+Frontend
+
+    React handles the UI components and dynamic rendering.
+    TypeScript ensures type safety and better development practices.
+    Vite is used as the build tool for fast and optimized bundling.
+
+Backend
+
+    Node.js runs the backend server.
+    Hono is used to manage routing and handle API requests.
+    TypeScript is also used in the backend to maintain consistency and type safety.
+
+API Endpoints
+GET / (Fetch Projects)
+
+Fetch all projects stored in the JSON file.
+POST /add (Add Project)
+
+Add a new project to the JSON file.
+POST /update (Update Project)
+
+Update the details of an existing project.
+POST /delete (Delete Project)
+
+Delete a project from the JSON file.
+How to Run the Project
+Prerequisites
+
+    Node.js should be installed.
+    npm for package management.
+
+Frontend
+
+    Navigate to the frontend folder:
+
+    bash
+
+cd frontend
+
+Install dependencies:
+
+bash
+
+npm install
+
+Start the development server:
+
+bash
+
+    npm run dev
+
+    The frontend will run on http://localhost:5173.
+
+Backend
+
+    Navigate to the backend folder:
+
+    bash
+
+cd backend
+
+Install backend dependencies:
+
+bash
+
+npm install
+
+Start the backend server:
+
+bash
+
+    npm start
+
+    The backend will run on http://localhost:3000.
+
+Project Screenshots
+
+Here’s a screenshot of the current portfolio app:
+
+Technical Stack
+
+    React: Frontend framework for building UI components.
+    TypeScript: Used for type safety and code clarity.
+    Hono: Lightweight web framework for the backend.
+    Node.js: JavaScript runtime for the backend.
+    Vite: Bundler and development tool for React.
