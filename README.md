@@ -31,7 +31,7 @@ This version builds upon the initial portfolio project by:
 
 ## Screenshots
 
-### The design of the application is based on the following layout:
+### Application layout:
 ![Screenshot of Portfolio](Screenshot-portfolio-2.png)
 
 ## How to Run the Project
