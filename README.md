@@ -73,11 +73,13 @@ Before you begin, ensure you have installed:
 
 ## Running the Application
 
-1. Start both frontend and backend servers:
-  bash
-  From the root directory
+1. Start the backend:
 
-           npm run dev
+        node server.mjs
+   
+2. Start the frontend:
+   
+        npm run dev
 
   This will start:
   - Frontend server at: http://localhost:5173
