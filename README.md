@@ -64,6 +64,7 @@ Before you begin, ensure you have installed:
    - JWT_SECRET=your_secret_key_here
    - ADMIN_USERNAME=admin
    - ADMIN_PASSWORD=password123
+   - DATABASE_URL="file:./projects.db"
 
 
 4. Set up the SQLite database using Prisma:
