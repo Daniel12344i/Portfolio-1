@@ -1,11 +1,11 @@
 # Portfolio Project
 
-# Portfolio Project
+A full-stack portfolio application designed to showcase development projects through an intuitive and modern interface. Built with React and TypeScript for a robust frontend, complemented by a Hono backend framework for efficient API handling and SQLite database for reliable data storage. The application features two distinct interfaces: a public user dashboard where visitors can explore projects, view technical details, and access live demos, and a secure admin dashboard that provides comprehensive project management capabilities. This dual-interface approach allows for both effective project presentation to the public and streamlined content management for administrators.
 
-A full-stack portfolio application built with React, TypeScript, Hono (backend), and SQLite. The project features both a public user dashboard for viewing projects and a secure admin dashboard for managing project content.
-
+The application emphasizes clean architecture, type safety through TypeScript, and modern development practices. Key technical features include JWT authentication for secure admin access, dynamic image upload and management, real-time project updates, and a responsive design that ensures optimal viewing across all devices. The use of SQLite with Prisma ORM provides a reliable and efficient data layer, while the Hono framework offers lightweight yet powerful backend capabilities, making the application both performant and maintainable.
 
 ## Demo
+
 
 ### User Dashboard
 ![User Dashboard Demo](./docs/user-dashboard.gif)
