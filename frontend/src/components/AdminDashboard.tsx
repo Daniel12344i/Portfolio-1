@@ -118,7 +118,12 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ adminToken, onLogout })
         <div className="container mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-8">
-              <h1 className="text-xl font-bold">Admin Control Panel</h1>
+              <h1 
+                onClick={() => window.location.reload()}
+                className="text-xl font-bold cursor-pointer hover:text-gray-200 transition-colors duration-200"
+              >
+                Admin Control Panel
+              </h1>
               <div className="hidden md:flex space-x-4">
                 <a 
                   href="/"
@@ -192,10 +197,35 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ adminToken, onLogout })
           </div>
 
           {/* Search Results Summary */}
-          <div className="mt-4 text-sm text-gray-600">
-            Found {filteredProjects.length} project{filteredProjects.length !== 1 ? 's' : ''}
-            {searchQuery && ` matching "${searchQuery}"`}
-            {filterStatus !== 'all' && ` with status "${filterStatus}"`}
+          <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-200">
+            <div className="text-sm text-gray-600">
+              Found {filteredProjects.length} project{filteredProjects.length !== 1 ? 's' : ''}
+              {searchQuery && ` matching "${searchQuery}"`}
+              {filterStatus !== 'all' && ` with status "${filterStatus}"`}
+            </div>
+            
+            <button
+              onClick={() => {
+                setIsEditing(true);
+                setEditingProject(null);
+              }}
+              className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors duration-200 flex items-center space-x-2"
+            >
+              <svg 
+                className="w-5 h-5" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+              <span>Create New Project</span>
+            </button>
           </div>
         </div>
 

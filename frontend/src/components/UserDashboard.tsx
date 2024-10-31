@@ -89,9 +89,17 @@ const UserDashboard: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo/Name - hide when menu is open */}
-            <span className={`text-xl font-bold text-[#64ffda] transition-opacity duration-300 ${
-              isMobileMenuOpen ? 'opacity-0' : 'opacity-100'
-            }`}>
+            <span 
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(() => {
+                  window.location.reload();
+                }, 500); // Wait for scroll to complete before reload
+              }}
+              className={`text-xl font-bold text-[#64ffda] transition-opacity duration-300 cursor-pointer ${
+                isMobileMenuOpen ? 'opacity-0' : 'opacity-100'
+              }`}
+            >
               Daniel Zemichael
             </span>
             
@@ -182,9 +190,21 @@ const UserDashboard: React.FC = () => {
               </p>
               {/* Enhanced social links */}
               <div className="flex justify-center space-x-8">
-                <SocialLink href="..." icon={FaGithub} hoverColor="hover:text-[#64ffda]" />
-                <SocialLink href="..." icon={FaLinkedin} hoverColor="hover:text-[#818cf8]" />
-                <SocialLink href="..." icon={FaEnvelope} hoverColor="hover:text-[#6ee7b7]" />
+                <SocialLink 
+                  href="https://github.com/Daniel12344i" 
+                  icon={FaGithub} 
+                  hoverColor="hover:text-[#64ffda]" 
+                />
+                <SocialLink 
+                  href="https://www.linkedin.com/in/daniel-zemichael-834859317/" 
+                  icon={FaLinkedin} 
+                  hoverColor="hover:text-[#818cf8]" 
+                />
+                <SocialLink 
+                  href="mailto:danielzemi@yahoo.com" 
+                  icon={FaEnvelope} 
+                  hoverColor="hover:text-[#6ee7b7]" 
+                />
               </div>
             </div>
           </div>
@@ -410,19 +430,19 @@ const UserDashboard: React.FC = () => {
                   <div className="space-y-6">
                     {[
                       {
-                        href: "mailto:your.email@example.com",
+                        href: "mailto:danielzemichael@gmail.com",
                         icon: FaEnvelope,
-                        text: "your.email@example.com",
+                        text: "danielzemi@yahoo.com",
                         gradient: "from-[#00DC82] to-[#36E4DA]"
                       },
                       {
-                        href: "https://linkedin.com/in/yourusername",
+                        href: "https://www.linkedin.com/in/daniel-zemichael-834859317/",
                         icon: FaLinkedin,
                         text: "LinkedIn Profile",
                         gradient: "from-[#818CF8] to-[#6366F1]"
                       },
                       {
-                        href: "https://github.com/yourusername",
+                        href: "https://github.com/Daniel12344i",
                         icon: FaGithub,
                         text: "GitHub Profile",
                         gradient: "from-[#EC4899] to-[#F472B6]"
