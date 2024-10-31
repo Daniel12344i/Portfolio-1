@@ -8,11 +8,11 @@ The application emphasizes clean architecture, type safety through TypeScript, a
 
 
 ### User Dashboard
-![User Dashboard Demo](./docs/user-dashboard.gif)
+![User Dashboard Demo](./docs/user-dashboard.png)
 *Public view of projects with filtering and detailed project information*
 
 ### Admin Dashboard
-![Admin Dashboard Demo](./docs/admin-dashboard.gif)
+![Admin Dashboard Demo](./docs/admin_dashboard.png)
 *Protected admin interface for managing projects*
 
 
