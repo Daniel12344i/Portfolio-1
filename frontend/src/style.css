@@ -1,0 +1,281 @@
+/* style.css */
+
+.project-list-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin: 5px 0;
+}
+
+.project-card-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-button, .delete-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.new-project-form {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.new-project-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.new-project-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-project-form input,
+.new-project-form textarea,
+.new-project-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.edit-project-form {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.edit-project-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.edit-project-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-project-form input,
+.edit-project-form textarea,
+.edit-project-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.update-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+.new-project-form, .edit-project-form {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.new-project-form h2, .edit-project-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.new-project-form label, .edit-project-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-project-form input, .new-project-form textarea,
+.edit-project-form input, .edit-project-form textarea,
+.new-project-form select, .edit-project-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-button, .update-button, .cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.update-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 10px;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+.project-form {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.project-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.project-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.project-form input,
+.project-form textarea,
+.project-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button, .cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 10px;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
