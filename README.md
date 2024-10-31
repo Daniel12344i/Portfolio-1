@@ -69,8 +69,15 @@ Before you begin, ensure you have installed:
 4. Set up the SQLite database using Prisma:
    bash
   cd backend
-  npx prisma migrate dev
-  npx prisma generate
+
+         - Generate Prisma client
+           npx prisma generate
+   
+         - Run migrations
+            npx prisma migrate reset
+         
+         - Seed the database
+            npx prisma db seed
 
  This will:
 - Create the SQLite database file
