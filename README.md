@@ -59,9 +59,9 @@ Before you begin, ensure you have installed:
 
 3. Create a `.env` file in the backend directory with the following content:
    env
-JWT_SECRET=your_secret_key_here
-ADMIN_USERNAME=admin
-ADMIN_PASSWORD=password123
+   - JWT_SECRET=your_secret_key_here
+   - ADMIN_USERNAME=admin
+   - ADMIN_PASSWORD=password123
 
 
 4. Set up the SQLite database using Prisma:
@@ -110,7 +110,7 @@ ADMIN_PASSWORD=password123
 
 2. Login credentials:
    Username: admin
-  Password: password123
+   Password: password123
 
 
 
@@ -125,18 +125,18 @@ ADMIN_PASSWORD=password123
 
 ## Project Structure
 
-├── frontend/ # React frontend application
-│ ├── src/
-│ │ ├── components/ # React components
-│ │ ├── types/ # TypeScript type definitions
-│ │ └── config/ # Configuration files
-│ └── public/ # Static assets
-├── backend/ # Hono backend application
-│ ├── prisma/ # Database schema and migrations
-│ │ ├── schema.prisma # Database schema
-│ │ └── migrations/ # SQLite migrations
-│ ├── uploads/ # Project image uploads
-│ └── server.mjs # Main Hono server file
+      ├── frontend/ # React frontend application
+      │ ├── src/
+      │ │ ├── components/ # React components
+      │ │ ├── types/ # TypeScript type definitions
+      │ │ └── config/ # Configuration files
+      │ └── public/ # Static assets
+      ├── backend/ # Hono backend application
+      │ ├── prisma/ # Database schema and migrations
+      │ │ ├── schema.prisma # Database schema
+      │ │ └── migrations/ # SQLite migrations
+      │ ├── uploads/ # Project image uploads
+      │ └── server.mjs # Main Hono server file
 
 
 
