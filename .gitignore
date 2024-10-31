@@ -25,5 +25,5 @@ dist-ssr
 # .gitignore
 .env
 node_modules/
-uploads/
-*.db
+#uploads/
+#.db
