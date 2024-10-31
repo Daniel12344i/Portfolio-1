@@ -46,44 +46,28 @@ Before you begin, ensure you have installed:
 2. Install dependencies for both frontend and backend:
    bash
   Install root dependencies
-  npm install
+
+        npm install
 
   Install frontend dependencies
   cd frontend
   
-  npm install
+        npm install
+        
   Install backend dependencies
-  
   cd ../backend
-  npm install
+  
+         npm install
 
 
 
 3. Create a `.env` file in the backend directory with the following content:
    env
-   - JWT_SECRET=your_secret_key_here
-   - ADMIN_USERNAME=admin
-   - ADMIN_PASSWORD=password123
-   - DATABASE_URL="file:./projects.db"
-
-
-4. Set up the SQLite database using Prisma:
-   bash
-  cd backend
-
-         - Generate Prisma client
-           npx prisma generate
    
-         - Run migrations
-            npx prisma migrate reset
-         
-         - Seed the database
-            npx prisma db seed
-
- This will:
-- Create the SQLite database file
-- Apply all migrations
-- Generate the Prisma client
+         JWT_SECRET=your_secret_key_here
+         ADMIN_USERNAME=admin
+         ADMIN_PASSWORD=password123
+         DATABASE_URL="file:./projects.db"
 
 
 
@@ -92,7 +76,8 @@ Before you begin, ensure you have installed:
 1. Start both frontend and backend servers:
   bash
   From the root directory
-  npm run dev
+
+           npm run dev
 
   This will start:
   - Frontend server at: http://localhost:5173
@@ -102,7 +87,8 @@ Before you begin, ensure you have installed:
 
 ### User Dashboard
 1. Access the user dashboard by visiting:
-   http://localhost:5173/user-dashboard
+   
+         http://localhost:5173/user-dashboard
    
   Here you can:
     - View all published projects
@@ -115,17 +101,19 @@ Before you begin, ensure you have installed:
 
 ### Admin Dashboard
 1. Access the admin login page:
-   http://localhost:5173/login
+   
+         http://localhost:5173/login
 
 
-2. Login credentials:
-   Username: admin
-   Password: password123
+3. Login credentials:
+   
+            Username: admin
+            Password: password123
 
 
 
 
-3. Test admin features:
+4. Test admin features:
 - Create new projects
 - Upload project images
 - Edit existing projects
